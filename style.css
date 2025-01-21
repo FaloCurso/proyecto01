@@ -41,7 +41,7 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* poner sombra */
     overflow: hidden;  /* si el texto no cabe en el contenedor lo oculta */
     width: 350px;
-    height: 500px;
+    height: 400px;
     text-align: center;
     margin-top: 20px; /* cuando cambio el tamaño de la pantalla se separa la card */
 }
@@ -50,12 +50,6 @@ header {
     transform: scale(1.05); /* Efecto de aumento al activarse */
   }
 
-.card-pinchar {
-  background-color: #98d2f8; /* Color destacado cuando es seleccionada */
-  transform: scale(1.05); /* Efecto de aumento al activarse */
-  text-decoration: none; /* para que no le ponga los colores y efectos el hupervinculo*/
-  color: inherit;
-}
 
 .card h2 {
   font-size: 24px;
@@ -82,7 +76,8 @@ h1{
   
   .gustos {
     list-style-type: none; /*para cambiar el estilo de la lista y quitarle la viñeta que sale a la izq*/
-    padding: 0;
+    padding: 20px;
+    margin-left: 10px;
   }
   
   .gustos li {
