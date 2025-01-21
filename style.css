@@ -1,0 +1,118 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 10;
+    padding: 20;
+    background-color: #f7f7f7;
+    justify-content: center;
+    align-items: center;
+}
+header {
+    background-color:#CEF6FB;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  nav ul {
+    display: flex;          
+    justify-content: right;   
+    list-style-type: none;   /* quitar las viñetas de la lista de navegacion*/
+  }
+   nav ul li a {
+    color: blue;
+    text-decoration: none;
+    font-size: 16x;
+    border-radius: 15px;
+    margin: 0 5px;
+    padding: 5px 10px;
+  }
+ 
+  nav ul li a:hover {
+    background-color: #ffffff;
+  }
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;  /* distribuye el espacio entre y alrededos del eje principal*/
+    flex-wrap: wrap;                /* permite que lo elemento se ajusten an varias lineas*/
+    margin-top: 20px;
+  }
+.card {
+    background: #CEF6FB;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* poner sombra */
+    overflow: hidden;  /* si el texto no cabe en el contenedor lo oculta */
+    width: 350px;
+    height: 500px;
+    text-align: center;
+    margin-top: 20px; /* cuando cambio el tamaño de la pantalla se separa la card */
+}
+ .card:target {
+    background-color: #98d2f8; /* Color destacado cuando es seleccionada */
+    transform: scale(1.05); /* Efecto de aumento al activarse */
+  }
+
+.card-pinchar {
+  background-color: #98d2f8; /* Color destacado cuando es seleccionada */
+  transform: scale(1.05); /* Efecto de aumento al activarse */
+  text-decoration: none; /* para que no le ponga los colores y efectos el hupervinculo*/
+  color: inherit;
+}
+
+.card h2 {
+  font-size: 24px;
+  color: blue;
+  margin-bottom: 15px;
+  }
+  
+.card img {
+    width: 60%;
+    height: 50%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+h1{
+    margin-left: 20px;
+    text-align: left;
+    color: blue;
+}
+.foto {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+  
+  .gustos {
+    list-style-type: none; /*para cambiar el estilo de la lista y quitarle la viñeta que sale a la izq*/
+    padding: 0;
+  }
+  
+  .gustos li {
+    font-size: 14px;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+  }
+  
+  .gustos img {
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  footer {
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+    background-color:#CEF6FB;
+  }
+  
+  /* Responsive */
+  @media (max-width: 750px) {
+    .cards-container {
+      flex-direction: column;
+      align-items: center;
+      
+    }
+}
