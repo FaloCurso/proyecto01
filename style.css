@@ -45,11 +45,6 @@ header {
     text-align: center;
     margin-top: 20px; /* cuando cambio el tamaño de la pantalla se separa la card */
 }
- .card:target {
-    background-color: #98d2f8; /* Color destacado cuando es seleccionada */
-    transform: scale(1.05); /* Efecto de aumento al activarse */
-  }
-g
 
 .card h2 {
   font-size: 24px;
